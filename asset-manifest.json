@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/bitcoin-tracker/static/js/main.7122d9ed.js",
+    "index.html": "/bitcoin-tracker/index.html",
+    "main.7122d9ed.js.map": "/bitcoin-tracker/static/js/main.7122d9ed.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.7122d9ed.js"
+  ]
+}
