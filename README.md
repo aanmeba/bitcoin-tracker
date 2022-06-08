@@ -4,4 +4,4 @@
 
 - `npm start` will run the app in your machine
 
-- [Live Demo](http://aanmeba.github.io/bitcoin-tracker)
+- [Live Demo](https://aanmeba.github.io/bitcoin-tracker)
