@@ -33,7 +33,7 @@ const DisplayData = ({ bitcoinData }) => {
     };
   };
 
-  return <Line data={formatCharData()} />;
+  return <Line data={bitcoinData ? formatCharData() : ""} />;
 };
 
 export default DisplayData;

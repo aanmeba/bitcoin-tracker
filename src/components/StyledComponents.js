@@ -13,6 +13,21 @@ export const Heading = styled.h1`
   font-family: "Arial";
 `;
 
+export const ErrorNotice = styled.div`
+  width: 100%;
+  hegiht: 100%;
+  background-color: #fdedec;
+  border-radius: 0.3rem;
+  margin: 0.5rem 0;
+`;
+
+export const ErrorText = styled.p`
+  font-size: 1rem;
+  font-family: "Arial";
+  color: brown;
+  padding-left: 1rem;
+`;
+
 export const SelectHeading = styled.span`
   font-size: 1em;
   font-family: "Arial";

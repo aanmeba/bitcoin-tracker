@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import CurrencySelector from "./CurrencySelector";
 import DisplayData from "./DisplayData";
+import ErrorAlert from "./Error";
 import Footer from "./Footer";
 import { AppContainer, Heading } from "./StyledComponents";
 
@@ -16,12 +17,16 @@ const App = () => {
     const data = await response.json();
     setBitcoinData(data.bpi);
   };
+
   useEffect(() => {
-    getData();
+    try {
+      getData();
+    } catch (error) {
+      console.error(error);
+    }
   }, [currency]);
 
   const handleCurrency = (value) => {
-    console.log(value);
     setCurrency(value);
   };
 
@@ -29,7 +34,9 @@ const App = () => {
     <AppContainer>
       <Heading>Bitcoin Tracker {currency ? `in ${currency}` : null}</Heading>
       <CurrencySelector currency={currency} handleCurrency={handleCurrency} />
+      <ErrorAlert />
       <DisplayData bitcoinData={bitcoinData} />
+
       <Footer />
     </AppContainer>
   );
